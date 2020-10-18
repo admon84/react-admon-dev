@@ -2,11 +2,18 @@ import React from 'react';
 
 import '../styles/index.less';
 
+// import GitHubIcon from '../images/github.svg';
+
 class App extends React.PureComponent {
     render() {
         return (
             <main>
-                <h1>admon.dev</h1>
+                <div>
+                    <h1>admon.dev</h1>
+                </div>
+                {/* <div>
+                    <GitHubIcon className="icon" />
+                </div> */}
             </main>
         );
     }

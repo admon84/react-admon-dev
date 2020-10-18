@@ -1,28 +1,31 @@
 const path = require('path');
-const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
-    plugins: [new webpack.ProgressPlugin()],
-    entry: path.resolve(__dirname, "src", "index.js"),
+    entry: './src/index',
     output: {
-        path: path.resolve(__dirname, "dist"),
-        filename: "main.js",
+        path: path.join(__dirname, '/dist'),
+        filename: 'bundle.js'
+    },
+    resolve: {
+        extensions: ['.ts', '.tsx', '.js']
     },
     module: {
         rules: [
             {
-                test: /\.(js|jsx)$/,
-                include: [path.resolve(__dirname, 'src')],
-                loader: 'babel-loader'
+                test: /\.(ts|js)x?$/,
+                exclude: /node_modules/,
+                use: {loader: 'babel-loader'},
             },
             {
-                test: /.css$/,
-                use: [
-                    { loader: "style-loader" },
-                    { loader: "css-loader"}
-                ]
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
             }
         ]
-    }
-}
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: './src/index.html'
+        })
+    ]
+};

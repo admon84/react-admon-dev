@@ -39,6 +39,7 @@
   "dependencies": {
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
+    "file-loader": "^6.1.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "webpack-dev-server": "^3.11.0",

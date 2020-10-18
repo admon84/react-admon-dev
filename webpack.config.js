@@ -3,7 +3,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: './src/index',
-    include: ['src/custom.d.ts'],
     output: {
         filename: 'bundle.js',
         path: path.join(__dirname, '/dist')
@@ -35,6 +34,10 @@ module.exports = {
                         },
                     },
                 ],
+            },
+            {
+                test: /\.jpe?g$|\.ico$|\.gif$|\.png$/,
+                use: {loader: 'file-loader?name=[name].[ext]'}
             },
             {
                 test: /\.svg$/,

@@ -1,26 +1,39 @@
 @icon-size: 32px;
+@white: #fff;
+@gray: #999;
+@lime: #0f0;
 
 html, body {
     background: #1d1d1d;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
-    color: #fff;
+    color: @white;
 }
 
 h1 {
     font-size: 2.4em;
     font-weight: normal;
+
+    span {
+        color: @lime;
+    }
 }
 
 a {
-    color: #fff;
+    color: @white;
     text-decoration: none;
 
-    &:hover,
-    &:focus {
-        color: #fff;
+    &:hover {
         text-decoration: underline;
     }
+}
+
+span.gray {
+    color: @gray;
+}
+
+span.lime {
+    color: @lime;
 }
 
 .layout {
@@ -56,7 +69,16 @@ a {
         padding-bottom: 2px;
     
         path {
-            fill: #fff;
+            fill: @white;
+        }
+    }
+
+    li {
+        span {
+            padding: 0 2px;
+        }
+        &:hover .icon path {
+            fill: @lime;
         }
     }
 }

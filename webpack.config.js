@@ -18,11 +18,28 @@ module.exports = {
                 use: {loader: 'babel-loader'}
             },
             {
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader']
-            }
+                test: /\.less$/,
+                use: [
+                    'style-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            sourceMap: true,
+                        },
+                    },
+                    {
+                        loader: 'less-loader',
+                        options: {
+                            sourceMap: true,
+                        },
+                    },
+                ],
+            },
         ]
     },
+	stats: {
+		colors: true
+	},
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html'

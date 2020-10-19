@@ -24,16 +24,16 @@ module.exports = {
                     {
                         loader: 'css-loader',
                         options: {
-                            sourceMap: true,
-                        },
+                            sourceMap: true
+                        }
                     },
                     {
                         loader: 'less-loader',
                         options: {
-                            sourceMap: true,
-                        },
-                    },
-                ],
+                            sourceMap: true
+                        }
+                    }
+                ]
             },
             {
                 test: /\.jpe?g$|\.ico$|\.gif$|\.png$/,
@@ -41,13 +41,13 @@ module.exports = {
             },
             {
                 test: /\.svg$/,
-                use: ['@svgr/webpack'],
-            },
+                use: ['@svgr/webpack']
+            }
         ]
     },
-	stats: {
-		colors: true
-	},
+    stats: {
+        colors: true
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html'

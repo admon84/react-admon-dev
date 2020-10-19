@@ -43,7 +43,7 @@ class App extends React.PureComponent {
                             </a>
                         </li>
                     </ul>
-                    
+
                 </div>
             </main>
         );

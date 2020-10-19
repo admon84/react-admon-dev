@@ -52,14 +52,25 @@ span.lime {
         flex: none;
     }
 
-    .heading {
+    h1 {
         text-align: center;
+        margin-top: 0;
     }
 }
 
-.link-list {
+ul.link-list {
     list-style: none;
+    margin-bottom: 5px;
     padding: 0;
+
+    li {
+        span {
+            padding: 0 2px;
+        }
+        &:hover .icon path {
+            fill: @lime;
+        }
+    }
 
     .icon {
         vertical-align: middle;
@@ -70,15 +81,6 @@ span.lime {
     
         path {
             fill: @white;
-        }
-    }
-
-    li {
-        span {
-            padding: 0 2px;
-        }
-        &:hover .icon path {
-            fill: @lime;
         }
     }
 }

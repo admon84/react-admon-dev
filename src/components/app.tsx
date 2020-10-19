@@ -33,13 +33,17 @@ class App extends React.PureComponent {
                         <li>
                             <a href="https://github.com/admon84">
                                 <GitHubIcon className="icon" />
-                                github.com/admon84
+                                github.com
+                                <span className="gray">/</span>
+                                admon84
                             </a>
                         </li>
                         <li>
                             <a href="https://dev.to/admon84">
                                 <DevIcon className="icon" />
-                                dev.to/admon84
+                                dev.to
+                                <span className="gray">/</span>
+                                admon84
                             </a>
                         </li>
                     </ul>

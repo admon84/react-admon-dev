@@ -1,4 +1,4 @@
-# react-admon-dev
+# react-admon-dev ![ci](https://github.com/admon84/react-admon-dev/workflows/ci/badge.svg)
 
 Personal website written in TypeScript + React.
 

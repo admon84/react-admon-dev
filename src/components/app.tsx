@@ -44,7 +44,6 @@ class App extends React.PureComponent {
                         </li>
                     </ul>
 
-                    
                 </div>
             </main>
         );

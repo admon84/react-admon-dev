@@ -6,13 +6,15 @@
 html, body {
     background: #1d1d1d;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
+    font-size: 22px;
     color: @white;
 }
 
-h1 {
-    font-size: 2.4em;
-    font-weight: normal;
+.heading {
+    p {
+        margin-top: 0;
+        font-size: 1.1em;
+    }
 
     span {
         color: @lime;
@@ -50,6 +52,8 @@ span.lime {
 
     .content {
         flex: none;
+        background-color: #1f1f1f;
+        padding: 20px;
     }
 
     h1 {
@@ -60,27 +64,27 @@ span.lime {
 
 ul.link-list {
     list-style: none;
-    margin-bottom: 5px;
+    margin: 0 auto;
     padding: 0;
 
     li {
-        span {
-            padding: 0 2px;
-        }
-        &:hover .icon path {
-            fill: @lime;
-        }
-    }
+        padding-left: 0.7em;
 
-    .icon {
-        vertical-align: middle;
-        width: @icon-size;
-        height: @icon-size;
-        padding-right: 8px;
-        padding-bottom: 2px;
-    
-        path {
-            fill: @white;
+        &::before {
+            content: "\203a";
+            color: @white;
+            display: inline-block;
+            width: 0.7em;
+            margin-left: -0.7em;
+        }
+
+        &:hover::before {
+            color: @lime;
+        }
+
+        a {
+            display: inline-block;
+            width: 100%;
         }
     }
 }

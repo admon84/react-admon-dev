@@ -15,35 +15,23 @@ class App extends React.PureComponent {
             <main className="layout">
                 <div className="content">
                     <div className="heading">
-                        <h1>
+                        <p>
                             <span className="lime">~/</span>
                             admon
                             <span className="gray">.</span>
                             dev
                             <span className="lime">#</span>
-                        </h1>
+                        </p>
                     </div>
                     <ul className="link-list">
                         <li>
-                            <EmailIcon className="icon" />
-                            admonwest84
-                            <span className="gray">[at]</span>
-                            gmail.com
-                        </li>
-                        <li>
-                            <a href="https://github.com/admon84">
-                                <GitHubIcon className="icon" />
-                                github.com
-                                <span className="gray">/</span>
-                                admon84
+                            <a href="https://screeps.admon.dev">
+                                screeps tools
                             </a>
                         </li>
                         <li>
-                            <a href="https://dev.to/admon84">
-                                <DevIcon className="icon" />
-                                dev.to
-                                <span className="gray">/</span>
-                                admon84
+                            <a href="https://github.com/admon84">
+                                github
                             </a>
                         </li>
                     </ul>

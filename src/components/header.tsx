@@ -16,7 +16,6 @@ class Header extends Component {
                         <Nav className="mr-auto">
                             <Nav.Link href="/">Home</Nav.Link>
                             <NavDropdown title="Projects" id="basic-nav-dropdown">
-                                
                                 <LinkContainer to="/screeps-bot">
                                     <NavDropdown.Item>
                                         Screeps Bot

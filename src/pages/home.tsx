@@ -13,6 +13,6 @@ const HomePage = () => {
             </Row>
         </Container>
     );
-}
+};
 
 export default HomePage;

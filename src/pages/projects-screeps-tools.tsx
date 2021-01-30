@@ -13,6 +13,6 @@ const ScreepsToolsPage = () => {
             </Row>
         </Container>
     );
-}
+};
 
 export default ScreepsToolsPage;

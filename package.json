@@ -16,7 +16,7 @@
   },
   "keywords": [],
   "author": "admon84",
-  "license": "ISC",
+  "license": "CC BY 4.0",
   "homepage": "https://admon.dev",
   "devDependencies": {
     "@babel/core": "^7.12.10",

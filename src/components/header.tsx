@@ -15,6 +15,9 @@ class Header extends Component {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
                             <Nav.Link href="/">Home</Nav.Link>
+                            <LinkContainer to="/about">
+                                <Nav.Link>About</Nav.Link>
+                            </LinkContainer>
                             <NavDropdown title="Projects" id="basic-nav-dropdown">
                                 <LinkContainer to="/screeps-bot">
                                     <NavDropdown.Item>

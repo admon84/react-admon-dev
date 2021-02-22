@@ -4,13 +4,16 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Logo from '../images/logo.svg';
 
 class Header extends Component {
     render() {
         return (
             <Navbar className="header" bg="dark" variant="dark" expand="md">
                 <Container>
-                    <Navbar.Brand href="/">admon.dev</Navbar.Brand>
+                    <Navbar.Brand href="/">
+                        <Logo />admon.dev
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">

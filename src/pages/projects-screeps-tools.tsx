@@ -8,7 +8,7 @@ const ScreepsToolsPage = () => {
         <Container>
             <Row>
                 <Col>
-                    <h2>Screeps Tools</h2>
+                    <h1>Screeps Tools</h1>
                 </Col>
             </Row>
         </Container>

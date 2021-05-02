@@ -8,7 +8,7 @@ const HomePage = () => {
         <Container>
             <Row>
                 <Col>
-                    <h2>Welcome</h2>
+                    <h1>Welcome</h1>
                 </Col>
             </Row>
         </Container>
